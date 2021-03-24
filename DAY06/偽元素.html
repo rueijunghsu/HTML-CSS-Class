@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p{
+			background-color: grey;
+		}
+
+		p::before {
+			content: '';
+			display: inline-block;
+			width: 0;
+			padding: 0;
+			border-top: 8px solid transparent;border-bottom: 8px solid transparent;
+			border-left: 8px solid #000;
+			vertical-align: middle;
+		}
+		/* 搭配content才有用 */
+		p::after {
+			content: '';
+			
+		}
+
+		.arrow {
+			width: 0;
+			padding: 0;
+			/* border-top: 40px solid transparent; */
+			border-left: 100px solid transparent;
+			border-right: 100px solid red;
+			border-bottom: 40px solid transparent;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<p>內容</p>
+
+	<div class="arrow"></div>
+
+</body>
+</html>
